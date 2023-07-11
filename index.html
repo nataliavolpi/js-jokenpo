@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&family=Rajdhani:wght@300;400;500&family=Teko:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/arcade.png" type="image/x-icon">
+  <title>Pedra, papel e tesoura</title>
+</head>
+<body>
+  <header class="header">
+    <p>Pedra | Papel | Tesoura</p>
+    <p>SCORE: Jogador <span class="human-score">0</span> - Computador <span class="machine-score">0</span></p>
+  </header>
+  <main>
+    <div class="principal">
+
+      <div class="card">
+        <div class="card-tittle">
+          <img src="images/rock.png" alt="Pedra">
+          <span class="name-item">Pedra</span>
+        </div>
+        <div class="card-subtitle">
+          <p>Pedra ganha de tesoura</p>
+          <button class="card-btn" id="rock" onclick="playHuman('rock')">Jogar com pedra</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-tittle">
+          <img src="images/paper.png" alt="Papel">
+          <span class="name-item">Papel</span>
+        </div>
+        <div class="card-subtitle">
+          <p>Papel ganha de pedra</p>
+          <button class="card-btn" id="paper" onclick="playHuman('paper')">Jogar com papel</button>
+        </div>
+      </div>
+
+        <div class="card">
+          <div class="card-tittle">
+            <img src="images/scissors.png" alt="Tesoura">
+            <span class="name-item">Tesoura</span>
+          </div>
+          <div class="card-subtitle">
+            <p>Tesoura ganha de papel</p>
+            <button class="card-btn" id="scissors" onclick="playHuman('scissors')">Jogar com tesoura</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p class="footer-p1">Resultado:</p>
+    <p class="footer-p2"><span class="human-choice"></span></p>
+    <p class="footer-p3"><span class="machine-choice"></span></p>
+    <div class="imgResult hidden"><img src="images/rock.png" id="jog"> <span>X</span> <img src="images/paper.png" id="pc"></div>
+    <p class="result"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

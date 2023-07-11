@@ -1,0 +1,253 @@
+:root {
+  --font0: 'Mulish', sans-serif;
+  --font1: 'Rajdhani', sans-serif;
+  --color0: #1D1E22;
+  --color1: #212229;
+  --color2: #B46CEB;
+  --color3: #e3e3e3;
+  --color4: #bd78e2;
+  --color5:#ce9be9;
+  --color6: #320234;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--font1);
+  box-sizing: border-box;
+  transition: all .5s;
+}
+
+html{
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body{
+  background-color: var(--color0);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color1);
+  max-width: 900px;
+  margin: auto;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border-radius: 14px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5), -4px -4px 16px rgba(255, 255, 255, 0.05);
+}
+
+.header{
+  background-color: var(--color2);
+  font-size: 24px;
+  font-weight: bold;
+  vertical-align: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+  border-radius: 10px;
+  -moz-border-radius: 10px; 
+}
+
+p{
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+main{
+  padding: 50px 0;
+  background-color: var(--color0);
+  display: flex;
+  justify-content: center;
+}
+
+.principal{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font0);
+  font-size: 20px;
+}
+
+.card{
+  padding: 6px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color3);
+  padding: 15px;
+  height: 250px;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+
+.card-tittle{
+  display: flex;
+  margin-bottom: 11px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+img{
+  height: 60px;
+  margin-right: 7px;
+}
+
+.name-item{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-subtitle{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-btn{
+  margin-top: 5px;
+  background-color: var(--color4);
+  border-color: var(--color4);
+  width: 10rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  font-size: .8em;
+  font-weight: bold;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  border-width: 2px;
+  border-style: outset;
+}
+
+.card-btn:hover{
+  background-color: var(--color5);
+}
+
+.card-btn:active{
+  background-color: var(--color5);
+  transform: translate(.7px, .5px);
+}
+
+footer{
+  background-color: var(--color6);
+  color: var(--color3);
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.footer-p1{
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.footer-p2, .footer-p3{
+  font-size: 18px;
+}
+
+.imgResult.hidden{
+  visibility: hidden;
+}
+
+.imgResult {
+  margin: .3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-result span{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.result{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .header{
+    font-size: 16px;
+    height: 60px;
+  }
+
+  
+  main{
+    padding: 20px 0;
+  }
+  
+  .card{
+    padding: 5px;
+    width: 160px;
+    height: 180px;
+    padding: 10px;
+  }
+  
+  .card-tittle{
+    margin-bottom: 7px;
+  }
+  
+  img{
+    height: 40px;
+    margin-right: 7px;
+  }
+  
+  .name-item{
+    font-size: 18px;
+  }
+  
+  .card-subtitle{
+    margin: 8px 0 15px 0;
+  }
+
+  .card-subtitle p{
+    font-size: 12px;
+  }
+  
+  .card-btn{
+    margin-top: 10px;
+    width: 8rem;
+    font-size: .8rem;
+    line-height: 1.1;
+  }
+  
+  .footer-p1{
+    font-size: 18px;
+  }
+  
+  .footer-p2, .footer-p3{
+    font-size: 12px;
+  }
+  
+  .result{
+    font-size: 20px;
+  }
+
+}
