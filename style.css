@@ -122,8 +122,7 @@ img{
 }
 
 .card-btn:active{
-  background-color: var(--color5);
-  transform: translate(.7px, .5px);
+  background-color: var(--color5); transform: translate(.7px, .5px);
 }
 
 footer{
@@ -137,9 +136,7 @@ footer{
 }
 
 .footer-p1{
-  font-size: 24px;
-  font-weight: 500;
-  margin-top: 5px;
+  font-size: 24px; font-weight: 500; margin-top: 5px;
 }
 
 .footer-p2, .footer-p3{
@@ -158,20 +155,17 @@ footer{
 }
 
 .img-result span{
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 20px; font-weight: 500;
 }
 
 .result{
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 22px; font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
   
   .header{
-    font-size: 16px;
-    height: 60px;
+    font-size: 16px; height: 60px;
   }
 
   main{
@@ -190,8 +184,7 @@ footer{
   }
   
   img{
-    height: 40px;
-    margin-right: 7px;
+    height: 40px;  margin-right: 7px;
   }
   
   .name-item{
