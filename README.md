@@ -10,4 +10,4 @@ Página responsiva. https://nataliavolpi.github.io/js-jokenpo/
 
 
 ## Demonstração
-![introstarwars](./images/demo.gif)
+![jokenpo](./images/demo.gif)
